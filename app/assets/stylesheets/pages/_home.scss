@@ -1,1 +1,30 @@
+.home-promise {
+  height: calc(100vh - 70px);
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.home-skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.home-skills-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 75px;
+  width: 75px;
+}
+p {
+  margin: 0!important;
+}
 // Specific CSS for your home-page
