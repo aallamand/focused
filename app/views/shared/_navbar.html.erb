@@ -12,7 +12,7 @@
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
-      <%= link_to "Projects", "#", class: "navbar-focused-item navbar-focused-link" %>
+      <%= link_to "Projects", "#projects", class: "navbar-focused-item navbar-focused-link" %>
       <%= link_to "Contact", "#", class: "navbar-focused-item navbar-focused-link" %>
 
       <!-- Avatar with dropdown menu -->
@@ -40,7 +40,7 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to "Projects", "#", class: "navbar-focused-item navbar-focused-link" %>
+      <%= link_to "Projects", "#projects", class: "navbar-focused-item navbar-focused-link" %>
       <%= link_to "Contact", "#", class: "navbar-focused-item navbar-focused-link" %>
       <%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-focused-item navbar-focused-link" %>
     <% end %>
