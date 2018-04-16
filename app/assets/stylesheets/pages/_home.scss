@@ -1,11 +1,20 @@
 .home-promise {
   height: calc(100vh - 70px);
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
-} p {
+  p {
   margin: 0!important;
+  font-size: 40px;
+  }
+}
+
+.typed-cursor {
+  font-size: 40px;
+  // opacity: 1;
+  // -webkit-animation: blink 0.7s infinite;
+  // -moz-animation: blink 0.7s infinite;
+  // animation: blink 0.7s infinite;
 }
 
 .home-skills-grid {
