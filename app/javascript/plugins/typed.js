@@ -12,8 +12,10 @@ const words = [
   ]
 const options = {
   strings: words,
-  typeSpeed: 60,
+  typeSpeed: 70,
   loop: true,
+  shuffle: true,
+  backDelay: 1000,
 }
 
 const typed = new Typed("#typed", options);
