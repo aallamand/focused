@@ -1,8 +1,19 @@
 import Typed from 'typed.js';
-
+const words = [
+  "details",
+  "our customers",
+  "making the world a better place",
+  "unicorns",
+  "your business needs",
+  "your success",
+  "enjoying life",
+  "beers",
+  "KPI's"
+  ]
 const options = {
-  strings: ["details", "our customers", "making the world a better place", "unicorns", "your business needs", "your success", "enjoying life", "beers", "KPI's"],
+  strings: words,
   typeSpeed: 60,
+  loop: true,
 }
 
 const typed = new Typed("#typed", options);
