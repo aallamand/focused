@@ -1,5 +1,8 @@
 import "bootstrap";
 import '../plugins/typed';
+import { menuToogle } from "../components/menu";
+
+menuToogle();
 
 
 // import "../components/cards_dashboard";
