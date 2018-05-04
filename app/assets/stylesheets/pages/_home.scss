@@ -26,7 +26,7 @@
   // animation: blink 0.7s infinite;
 }
 
-.home-skills-grid {
+.home-expertises-grid {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -34,7 +34,7 @@
   margin-bottom: 5%;
 }
 
-.home-skills-title {
+.home-expertises-title {
   margin-left: 70px;
   h1 {
   font-size: 28px;
@@ -45,13 +45,13 @@
   }
 }
 
-.home-skills-details {
+.home-expertises-details {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.home-skills-details-title {
+.home-expertises-details-title {
   display: flex;
   align-items:center;
   justify-content: center;
@@ -63,7 +63,7 @@
   }
 }
 
-.home-skills-details-icon {
+.home-expertises-details-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,7 +75,7 @@
     justify-content: center;
   }
 }
-.home-skills-details-desc {
+.home-expertises-details-desc {
   max-width: 25vw;
   p {
     text-align: center;
@@ -106,33 +106,59 @@
   }
 }
 
-.home-projects-grid {
+.home-realisations-grid {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 3%;
 }
 
-.home-projects-title {
-  margin-left: 9%;
+.home-realisations-title {
+  margin-left: 70px;
   h1 {
-  font-size: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 2.14;
+    letter-spacing: 4.3px;
+    text-align: left;
   }
 }
 
 
-.home-projects-details {
-  height: 200px;
-  width: 350px;
-  background-color: red;
+.home-realisations-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40vw;
 }
 
-.home-projects-more {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 9%;
-  h3{
-    font-size: 15px;
+.home-realisations-description h3 {
+  font-size: 20px;
+  letter-spacing: 2.3px;
+  text-align: center;
+}
+.home-a-propos {
+  margin-bottom: 70px;
+}
+.home-a-propos-title {
+  margin-left: 70px;
+  h1 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 2.14;
+  letter-spacing: 4.3px;
+  text-align: left;
+  }
+}
+
+.home-a-propos-description {
+  margin-left: 70px;
+  margin-right: 70px;
+  p {
+    font-size: 20px;
+    line-height: 1.36;
+    letter-spacing: 1px;
+    text-align: justify;
   }
 }
