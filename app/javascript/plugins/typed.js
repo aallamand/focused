@@ -14,7 +14,7 @@ const options = {
   strings: words,
   typeSpeed: 70,
   loop: true,
-  shuffle: true,
+  // shuffle: true,
   // backDelay: 1000,
 }
 
