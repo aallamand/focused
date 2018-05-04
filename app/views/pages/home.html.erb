@@ -7,39 +7,58 @@
         <div class="mousey">
         <div class="scroller"></div>
     </div>
-
 </div>
-
 
 </div>
 <div class="home-skills">
   <div class="home-skills-title">
-    <h1>Nos skills</h1>
+    <h1>Expertises</h1>
   </div>
   <div class="home-skills-grid">
     <div class="home-skills-details">
-      <div class="home-skills-desc">
+      <div class="home-skills-icon">
+        <%= image_tag "expertises/svg/web-dev.svg", alt: "Expertise web developpement", height: 160 %>
+      </div>
+      <div class="home-skills-details-title">
          <h2>Développement Web</h2>
       </div>
-      <div class="home-skills-icon">
-        <p>Elem 1</p>
+      <div class="home-skills-details-desc">
+         <p>Nous maitrisons les langages de développement moderne pour réaliser vos projets sur mesure</p>
       </div>
     </div>
     <div class="home-skills-details">
-      <div class="home-skills-desc">
-         <h2>Développement Web</h2>
-      </div>
       <div class="home-skills-icon">
-        <p>Elem 2</p>
+        <%= image_tag "expertises/svg/web-design.svg", alt: "Expertise web design", height: 160 %>
+      </div>
+      <div class="home-skills-details-title">
+         <h2>Web Design</h2>
+      </div>
+      <div class="home-skills-details-desc">
+         <p>L’expérience utilisateur (UX) est au coeur de nos préoccupations lors de la réalisations de interfaces (UI)</p>
       </div>
     </div>
     <div class="home-skills-details">
-      <div class="home-skills-desc">
-         <h2>Développement Web</h2>
-      </div>
       <div class="home-skills-icon">
-        <p>Elem 3</p>
+        <%= image_tag "expertises/svg/web-marketing.svg", alt: "Expertise web marketing", height: 160 %>
       </div>
+      <div class="home-skills-details-title">
+         <h2>Web Marketing</h2>
+      </div>
+      <div class="home-skills-details-desc">
+         <p>Configuration des outils, analyse des données, rapport KPI’s et recommandations</p>
+      </div>
+    </div>
+  </div>
+  <div class="home-tools">
+    <div class="home-tools-title">
+      <h3>Quelques outils que nous utilisons quotiennement</h3>
+    </div>
+    <div class="home-tools-icons">
+      <% Dir.glob('app/assets/images/tools/svg/*.svg') do |icon| %>
+        <% path = icon[/(tools).*g/] %>
+        <% alt = "Icône outils #{icon[/(svg).*g/]}" %>
+        <%= image_tag "#{path}", alt: "#{alt}", height: 160 %>
+    <% end %>
     </div>
   </div>
 </div>
