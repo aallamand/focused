@@ -27,11 +27,6 @@
 }
 
 .home-expertises-grid {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 3%;
-  margin-bottom: 5%;
 }
 
 .home-expertises-title {
@@ -76,7 +71,6 @@
   }
 }
 .home-expertises-details-desc {
-  max-width: 25vw;
   p {
     text-align: center;
     font-weight: lighter;
