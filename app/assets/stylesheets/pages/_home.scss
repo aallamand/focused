@@ -35,7 +35,7 @@
 }
 
 .home-expertises-title {
-  margin-left: 70px;
+  // margin-left: 70px;
   h1 {
   font-size: 28px;
   font-weight: bold;
@@ -107,14 +107,19 @@
 }
 
 .home-realisations-grid {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 3%;
+}
+
+.home-realisations-links {
+  text-decoration: none;
+  color: $black;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+  }
 }
 
 .home-realisations-title {
-  margin-left: 70px;
+  // margin-left: 70px;
   h1 {
     font-size: 28px;
     font-weight: bold;
@@ -130,7 +135,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 40vw;
+  // max-width: 40vw;
 }
 
 .home-realisations-description h3 {
@@ -138,11 +143,16 @@
   letter-spacing: 2.3px;
   text-align: center;
 }
+
+.home-realisations-image img {
+  max-width: 100%;
+}
+
 .home-a-propos {
   margin-bottom: 70px;
 }
 .home-a-propos-title {
-  margin-left: 70px;
+  // margin-left: 70px;
   h1 {
   font-size: 28px;
   font-weight: bold;
@@ -153,8 +163,8 @@
 }
 
 .home-a-propos-description {
-  margin-left: 70px;
-  margin-right: 70px;
+  // margin-left: 70px;
+  // margin-right: 70px;
   p {
     font-size: 20px;
     line-height: 1.36;
