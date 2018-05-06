@@ -1,8 +1,12 @@
 <div class="container">
   <div class="home-promise" id="home-entrance">
       <div class="home-promise-text">
-        <p>Focused on&nbsp;</p>
-        <p id="typed" style="font-weight: bold"></p>
+        <div class="home-promise-text-1">
+          <p style="font-weight: 300">Focused on&nbsp;</p>
+        </div>
+        <div class="home-promise-text-2">
+          <p id="typed" style="font-weight: bold"></p>
+        </div>
       </div>
       <div class="scroll-downs">
         <div class="mousey">
@@ -12,12 +16,12 @@
   </div>
   <div class="home-expertises" id="expertises">
     <div class="home-expertises-title">
-      <h1>Expertises</h1>
+      <h1>1. Expertises</h1>
     </div>
     <div class="row">
        <div class="col-xs-12 col-sm-6 col-md-3 home-expertises-details">
         <div class="home-expertises-icon">
-          <%= image_tag "expertises/svg/product-management.svg", alt: "Expertise product management", height: 100 %>
+          <%= image_tag "expertises/svg/product-management.svg", alt: "Expertise product management", height: 80 %>
         </div>
         <div class="home-expertises-details-title">
            <h2>Product Management</h2>
@@ -28,7 +32,7 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 home-expertises-details">
         <div class="home-expertises-icon">
-          <%= image_tag "expertises/svg/web-design.svg", alt: "Expertise web design", height: 100 %>
+          <%= image_tag "expertises/svg/web-design.svg", alt: "Expertise web design", height: 80 %>
         </div>
         <div class="home-expertises-details-title">
            <h2>Web Design</h2>
@@ -39,7 +43,7 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 home-expertises-details">
         <div class="home-expertises-icon">
-          <%= image_tag "expertises/svg/web-dev.svg", alt: "Expertise web developpement", height: 100 %>
+          <%= image_tag "expertises/svg/web-dev.svg", alt: "Expertise web developpement", height: 80 %>
         </div>
         <div class="home-expertises-details-title">
            <h2>Développement Web</h2>
@@ -52,7 +56,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3 home-expertises-details">
         <div class="home-expertises-icon">
-          <%= image_tag "expertises/svg/web-marketing.svg", alt: "Expertise web marketing", height: 100 %>
+          <%= image_tag "expertises/svg/web-marketing.svg", alt: "Expertise web marketing", height: 80 %>
         </div>
         <div class="home-expertises-details-title">
            <h2>Web Marketing</h2>
@@ -71,17 +75,17 @@
         <% Dir.glob('app/assets/images/tools/svg/*.svg') do |icon| %>
           <% path = icon[/(tools).*g/] %>
           <% alt = "Icône outils #{icon[/(svg).*g/]}" %>
-          <%= image_tag "#{path}", alt: "#{alt}", height: 35 %>
+          <%= image_tag "#{path}", data: {placement:"top", toggle:"tooltip"}, title:"#{alt}", alt: "#{alt}", height: 35 %>
       <% end %>
       </div>
     </div>
   </div>
   <div class="home-realisations" id="realisations">
     <div class="home-realisations-title">
-      <h1>Réalisations</h1>
+      <h1>2. Réalisations</h1>
     </div>
     <div class="row">
-      <%= link_to("http://savoy-international.com/?ref=focused", target: "_blank", class: "home-realisations-links col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1")do %>
+      <%= link_to("http://savoy-international.com/?ref=focused", target: "_blank", class: "home-realisations-links col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-5 ")do %>
         <div class="home-realisations-details">
           <div class="home-realisations-image">
             <%= image_tag "realisations/Savoy_Capture.png", alt: "Réslisation de développement web pour Savoy International" %>
@@ -95,7 +99,7 @@
           </div>
         </div>
       <% end %>
-      <%= link_to("https://www.legumes.green/?ref=focused", target: "_blank", class: "home-realisations-links col-xs-10 col-xs-offset-1 col-md-5")do %>
+      <%= link_to("https://www.legumes.green/?ref=focused", target: "_blank", class: "home-realisations-links col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-0")do %>
         <div class="home-realisations-details">
           <div class="home-realisations-image">
             <%= image_tag "realisations/legumes_green.png", alt: "Réalisation de conception et développement Legumes green" %>
@@ -113,7 +117,7 @@
   </div>
   <div class="home-a-propos">
     <div class="home-a-propos-title">
-      <h1>A propos de Focused</h1>
+      <h1>3. A propos de Focused</h1>
     </div>
     <div class="home-a-propos-description">
       <p>
