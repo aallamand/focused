@@ -14,8 +14,14 @@ const options = {
   strings: words,
   typeSpeed: 70,
   loop: true,
+  // fadeOut: false,
+  // fadeOutClass: 'typed-fade-out',
+  // fadeOutDelay: 500,
   // shuffle: true,
-  // backDelay: 1000,
+  backDelay: 1000,
+  backSpeed: 70,
+
+
 }
 
 const typed = new Typed("#typed", options);

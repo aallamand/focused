@@ -8,52 +8,61 @@
 
 .home-promise-text {
   height: 85%;
+  text-align: center;
   display: flex;
-  padding-top: 55px;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding-top: 55px;
   p {
   margin: 0!important;
-  font-size: 40px;
+  font-size: 70px;
   }
 }
 
 .typed-cursor {
-  font-size: 40px;
+  font-size: 70px;
   // opacity: 1;
   // -webkit-animation: blink 0.7s infinite;
   // -moz-animation: blink 0.7s infinite;
   // animation: blink 0.7s infinite;
 }
-
+.home-promise-text-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .home-expertises-grid {
 }
 
 .home-expertises-title {
   // margin-left: 70px;
   h1 {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 900;
   line-height: 2.14;
-  letter-spacing: 4.3px;
   text-align: left;
+  margin: 30px 0;
   }
 }
-
+.home-expertises-icon {
+  margin: 10px 0;
+}
 .home-expertises-details {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0;
 }
 
 .home-expertises-details-title {
   display: flex;
   align-items:center;
   justify-content: center;
+  padding-bottom: 10px;
   h2 {
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: 2.5px;
     text-align: center;
   }
 }
@@ -75,7 +84,7 @@
     text-align: center;
     font-weight: lighter;
     font-size: 15px;
-    letter-spacing: 2.5px;
+    padding: 0 5px;
   }
 }
 
@@ -83,12 +92,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .home-tools-title h3 {
   font-size: 18px;
   line-height: 1.30;
-  letter-spacing: 3.5px;
   text-align: center;
 }
 
@@ -99,6 +108,7 @@
   flex-wrap: wrap;
   img {
     margin-right: 10px;
+    margin-top: 10px;
     height: 35px;
   }
 }
@@ -118,11 +128,12 @@
 .home-realisations-title {
   // margin-left: 70px;
   h1 {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 900;
     line-height: 2.14;
-    letter-spacing: 4.3px;
     text-align: left;
+    margin: 30px 0;
+
   }
 }
 
@@ -137,7 +148,6 @@
 
 .home-realisations-description h3 {
   font-size: 18px;
-  letter-spacing: 2.3px;
   text-align: center;
 }
 
@@ -151,11 +161,12 @@
 .home-a-propos-title {
   // margin-left: 70px;
   h1 {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 900;
   line-height: 2.14;
-  letter-spacing: 4.3px;
   text-align: left;
+  margin: 30px 0;
+
   }
 }
 
@@ -165,7 +176,6 @@
   p {
     font-size: 16px;
     line-height: 1.36;
-    letter-spacing: 1px;
     text-align: justify;
   }
 }
