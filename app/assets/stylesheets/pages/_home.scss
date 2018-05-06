@@ -32,7 +32,7 @@
 .home-expertises-title {
   // margin-left: 70px;
   h1 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
   line-height: 2.14;
   letter-spacing: 4.3px;
@@ -51,7 +51,7 @@
   align-items:center;
   justify-content: center;
   h2 {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 2.5px;
     text-align: center;
@@ -74,7 +74,7 @@
   p {
     text-align: center;
     font-weight: lighter;
-    font-size: 19px;
+    font-size: 15px;
     letter-spacing: 2.5px;
   }
 }
@@ -86,17 +86,20 @@
 }
 
 .home-tools-title h3 {
-  font-size: 23px;
-  line-height: 2.61;
+  font-size: 18px;
+  line-height: 1.3;
   letter-spacing: 3.5px;
   text-align: center;
 }
 
 .home-tools-icons {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
   img {
     margin-right: 10px;
-
-    height: 55px;
+    height: 35px;
   }
 }
 
@@ -115,7 +118,7 @@
 .home-realisations-title {
   // margin-left: 70px;
   h1 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     line-height: 2.14;
     letter-spacing: 4.3px;
@@ -133,7 +136,7 @@
 }
 
 .home-realisations-description h3 {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 2.3px;
   text-align: center;
 }
@@ -148,7 +151,7 @@
 .home-a-propos-title {
   // margin-left: 70px;
   h1 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
   line-height: 2.14;
   letter-spacing: 4.3px;
@@ -160,7 +163,7 @@
   // margin-left: 70px;
   // margin-right: 70px;
   p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.36;
     letter-spacing: 1px;
     text-align: justify;
