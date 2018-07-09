@@ -1,27 +1,37 @@
 .home-promise {
-  height: calc(100vh - 75px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: image-url('imgbanner4.png');
+  background-size: cover;
+  background-position: center;
 }
 
+.overlay-white {
+  width: 100%;
+  background-color: $white;
+  opacity: 0.2;
+  position: absolute;
+  height: 100vh;
+}
 .home-promise-text {
-  height: 85%;
   text-align: center;
+  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 55px;
+  z-index: 1;
   p {
   margin: 0!important;
-  font-size: 70px;
+  font-size: 50px;
   }
 }
 
 .typed-cursor {
-  font-size: 70px;
+  font-size: 50px;
   // opacity: 1;
   // -webkit-animation: blink 0.7s infinite;
   // -moz-animation: blink 0.7s infinite;
@@ -179,3 +189,13 @@
     text-align: justify;
   }
 }
+
+@media(max-width: 800px) {
+  .home-promise-text p {
+    font-size: 40px;
+  }
+  .typed-cursor {
+    font-size: 40px;
+  }
+}
+
