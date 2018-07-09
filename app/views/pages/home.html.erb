@@ -14,6 +14,7 @@
     </div>
   </div>
 </div>
+
 <div class="container">
   <div class="home-expertises" id="expertises">
     <div class="home-expertises-title">
@@ -28,7 +29,7 @@
            <h2>Web Design</h2>
         </div>
         <div class="home-expertises-details-desc">
-           <p>L’expérience utilisateur (UX) est au coeur de nos préoccupations lors de la réalisations de interfaces (UI)</p>
+           <p>Nous designons des interfaces (UI) qui répondent à vos besoins, en plançant l’expérience utilisateur (UX) au coeur de notre processus créatif.</p>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4 home-expertises-details">
@@ -39,7 +40,7 @@
            <h2>Développement Web</h2>
         </div>
         <div class="home-expertises-details-desc">
-           <p>Nous maitrisons les langages de développement moderne pour réaliser vos projets sur mesure</p>
+           <p>Nous donnons vie à vos projets, en nous appuyant sur des langages de développement moderne.</p>
         </div>
       </div>
 
@@ -52,7 +53,7 @@
            <h2>Web Marketing</h2>
         </div>
         <div class="home-expertises-details-desc">
-           <p>Configuration des outils, analyse des données, rapport KPI’s et recommandations</p>
+           <p> Nous assurons la visibilité de votre projet grâce à une stratégie webmarketing calibrée sur mesure. Nous configurons des outils qui permettent l'analyse des données et la génération rapport KPI’s.</p>
         </div>
       </div>
     </div>
@@ -61,14 +62,13 @@
         <h3>Quelques outils que nous utilisons quotiennement</h3>
       </div>
       <div class="home-tools-icons">
-        <% Dir.glob('app/assets/images/tools/svg/*.svg') do |icon| %>
-          <% path = icon[/(tools).*g/] %>
-          <% alt = "Icône outils #{icon[/(svg).*g/]}" %>
-          <%= image_tag "#{path}", data: {placement:"top", toggle:"tooltip"}, title:"#{alt}", alt: "#{alt}", height: 35 %>
-      <% end %>
+        <% @icons.each do |icon| %>
+        <%= cl_image_tag icon.photo, data: {placement:"top", toggle:"tooltip"}, title:"#{icon.name}", height: 35 %>
+        <% end %>
       </div>
     </div>
   </div>
+
   <div class="home-realisations" id="realisations">
     <div class="home-realisations-title">
       <h1>2. Réalisations</h1>
@@ -121,3 +121,5 @@
     </div>
   </div>
 </div>
+
+
