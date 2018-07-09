@@ -17,6 +17,10 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem 'carrierwave', '~> 1.2'
+gem 'cloudinary'
+gem 'forest_liana'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
