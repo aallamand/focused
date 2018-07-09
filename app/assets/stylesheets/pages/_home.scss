@@ -198,4 +198,38 @@
     font-size: 40px;
   }
 }
+@media(max-width: 768px) {
+  .home-expertises-details-desc {
+    max-width: 50%;
+  }
+  .home-expertises-title {
+    display: flex;
+    justify-content: center;
+  }
+  .home-realisations-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-a-propos-title {
+    display: flex;
+    justify-content: center;
+  }
+  .home-a-propos-description {
+    display: flex;
+    justify-content: center;
+    p {
+      text-align: center;
+    }
+  }
+
+}
+@media(max-width: 550px) {
+  .home-expertises-details-desc {
+    max-width: 75%;
+  }
+   .footer {
+    display: none;
+  }
+}
 
