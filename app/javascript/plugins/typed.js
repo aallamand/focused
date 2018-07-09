@@ -1,14 +1,23 @@
 import Typed from 'typed.js';
 const words = [
-  "details",
-  "our customers",
+  // "our customers",
+  // "details",
   "making the world a better place",
-  "unicorns",
-  "your business needs",
-  "your success",
-  "enjoying life",
-  "beers",
-  "KPI's"
+  // "your business needs",
+  // "your success",
+  // "beers",
+  // "KPI's",
+  // "reports",
+  // "being happy",
+  // "our customers 😎",
+  // "details 🔍",
+  // "making the world a better place 🌈",
+  // "your business needs 🚀",
+  // "your success 💵",
+  // "beers 🍺",
+  // "KPI's 📈",
+  // "reports 📊",
+  // "being happy 😁"
   ]
 const options = {
   strings: words,
@@ -20,8 +29,6 @@ const options = {
   // shuffle: true,
   backDelay: 1000,
   backSpeed: 70,
-
-
 }
 
 const typed = new Typed("#typed", options);
