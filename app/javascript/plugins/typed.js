@@ -9,15 +9,15 @@ const words = [
   "KPI's",
   "reports",
   "being happy",
-  "our customers 😎",
-  "details 🔍",
-  "making the world a better place 🌈",
-  "your business needs 🚀",
-  "your success 💵",
-  "beers 🍺",
-  "KPI's 📈",
-  "reports 📊",
-  "being happy 😁"
+  // "our customers 😎",
+  // "details 🔍",
+  // "making the world a better place 🌈",
+  // "your business needs 🚀",
+  // "your success 💵",
+  // "beers 🍺",
+  // "KPI's 📈",
+  // "reports 📊",
+  // "being happy 😁"
   ]
 const options = {
   strings: words,
