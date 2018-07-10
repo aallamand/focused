@@ -11,6 +11,10 @@
   justify-content: space-between;
 }
 
+.dropdown-backdrop {
+  z-index: -1;
+}
+
 /* Logo */
 .navbar-focused-brand img {
   border: 2px solid $gray;
