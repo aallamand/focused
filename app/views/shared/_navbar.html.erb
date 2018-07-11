@@ -14,7 +14,7 @@
       <!-- Links when logged in -->
       <%= link_to "expertises", "#expertises", class: "navbar-focused-item navbar-focused-link" %>
       <%= link_to "réalisation", "#realisations", class: "navbar-focused-item navbar-focused-link" %>
-      <%= mail_to "contact@focused.fr", "contact", subject: "Demande de devis", class: "navbar-focused-item navbar-focused-link" %>
+      <%= link_to "contact", root_url + ("pages/contact"), class: "navbar-focused-item navbar-focused-link" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-focused-item">
@@ -43,7 +43,7 @@
       <!-- Login link (when logged out) -->
       <%= link_to "expertises", "#expertises", class: "navbar-focused-item navbar-focused-link" %>
       <%= link_to "réalisations", "#realisations", class: "navbar-focused-item navbar-focused-link" %>
-      <%= mail_to "contact@focused.fr", "contact", subject: "Demande de devis", class: "navbar-focused-item navbar-focused-link" %>
+      <%= link_to "contact", root_url + ("pages/contact"), class: "navbar-focused-item navbar-focused-link" %>
       <%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-focused-item navbar-focused-link" %>
     <% end %>
   </div>
@@ -59,7 +59,7 @@
       <ul class="dropdown-menu dropdown-menu-right navbar-focused-dropdown-menu">
         <li><%= link_to "expertises", "#expertises" %></li>
         <li><%= link_to "réalisations", "#realisations" %></li>
-        <li><%= link_to "contact", "#contact" %></li>
+        <li><%= link_to "contact", root_url + ("pages/contact") %></li>
       </ul>
     </div>
   </div>

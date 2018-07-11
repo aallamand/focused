@@ -154,31 +154,6 @@
   max-width: 100%;
 }
 
-.home-a-propos {
-  margin-bottom: 70px;
-}
-.home-a-propos-title {
-  // margin-left: 70px;
-  h1 {
-  font-size: 28px;
-  font-weight: 900;
-  line-height: 2.14;
-  text-align: left;
-  margin: 30px 0;
-
-  }
-}
-
-.home-a-propos-description {
-  // margin-left: 70px;
-  // margin-right: 70px;
-  p {
-    font-size: 16px;
-    line-height: 1.36;
-    text-align: justify;
-  }
-}
-
 @media(max-width: 800px) {
   .home-promise-text p {
     font-size: 40px;
