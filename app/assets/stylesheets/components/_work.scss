@@ -1,0 +1,145 @@
+.work {
+  display: flex;
+  padding: 50px 0;
+
+}
+.bg-gray {
+  background-color: $bg-gray;
+}
+.work-img-right {
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    margin-left: 120px;
+  }
+  img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.work-img-left {
+  overflow: hidden;
+  img {
+    max-width: 100%;
+  }
+  img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+
+.work-title-left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  h3 {
+    font-size: 20px;
+    margin: 0!important;
+    text-align: center;
+    opacity: 0.9;
+  }
+}
+
+.work-title-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  h3 {
+    font-size: 20px;
+    margin: 0!important;
+    text-align: center;
+    opacity: 0.9;
+  }
+}
+.work-done {
+  margin-bottom: 15px;
+  h3 {
+    font-weight: bold;
+  }
+}
+.work-who {
+  margin-bottom: 10px;
+  h3 {
+    font-weight: lighter;
+    padding-bottom: 5px;
+  }
+}
+
+.work-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: $black;
+    opacity: 0.9;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+}
+
+.work-title-section {
+  margin-bottom: 40px;
+  h1 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 2.14;
+    text-align: left;
+    margin: 30px 0;
+
+  }
+}
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  p {
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+.btn-contact {
+  border: 2px solid $gray;
+  color:  $gray;
+  padding: 5px 20px;
+  &:hover {
+    color: $white;
+    background-color: $gray;
+    transition: 0.5s background-color ease;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@media(max-width: 650px) {
+  .work {
+    display: grid;
+    margin-bottom: 35px;
+  }
+  .work-img-right img {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .work-title-left {
+    display: initial;
+  }
+  .work-title-right {
+    display: initial;
+  }
+  .work-1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .work-3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
