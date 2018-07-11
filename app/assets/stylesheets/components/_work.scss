@@ -1,17 +1,57 @@
 .work {
-  height: 80vh;
-  background-size: cover;
+  display: flex;
 }
 
-.works-title {
+.work-img {
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    margin-left: 120px;
+  }
+  img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.work-title {
+
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  flex-direction: column;
   h3 {
     font-size: 20px;
     margin: 0!important;
-    margin: 30px 0;
-    min-width: 452px;
+    text-align: center;
+    opacity: 0.9;
+  }
+}
+.work-done {
+  margin-bottom: 15px;
+  h3 {
+    font-weight: bold;
+  }
+}
+.work-who {
+  margin-bottom: 10px;
+  h3 {
+    font-weight: lighter;
+    padding-bottom: 5px;
+  }
+}
+
+.work-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: $black;
+    opacity: 0.9;
+  }
+  a:hover {
+    opacity: 0.7;
   }
 }
