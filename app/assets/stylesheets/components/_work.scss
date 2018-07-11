@@ -94,6 +94,30 @@
 
   }
 }
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  p {
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+.btn-contact {
+  border: 2px solid $gray;
+  color:  $gray;
+  padding: 5px 20px;
+  &:hover {
+    color: $white;
+    background-color: $gray;
+    transition: 0.5s background-color ease;
+  }
+  &:focus {
+    outline: none;
+  }
+}
 
 @media(max-width: 650px) {
   .work {

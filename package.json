@@ -2,6 +2,7 @@
   "name": "focused",
   "private": true,
   "dependencies": {
+    "@material/button": "^0.37.0",
     "@rails/webpacker": "^3.5.5",
     "bootstrap": "3",
     "hamburgers": "^0.9.3",
