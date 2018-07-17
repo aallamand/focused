@@ -1,0 +1,10 @@
+<%= simple_form_for @message,  html: { class: "email-form-input"} do |f| %>
+
+  <%= f.input :email, placeholder: "monemail@domain.com", label: false %>
+  <%= f.input :name, placeholder: "Emile", label: false %>
+  <%= f.input :subject, placeholder: "Je veux travailler avec vous", label: false %>
+  <%= f.input :description, placeholder: "Message de ouf !", label: false %>
+  <%= f.button :submit, 'Envoyer !', class: "button-email" %>
+<% end %>
+<%= render 'shared/message' %>
+
