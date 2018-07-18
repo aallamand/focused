@@ -3,10 +3,10 @@ class Message < ApplicationRecord
   validates :name, presence: true
   validates :subject, presence: true
   validates :description, presence: true
-  after_create :send_welcome_email
+  after_create :send_confirmation_email
 
   private
-  def send_welcome_email
-    MessageMailer.welcome(self.id).deliver_later
+  def send_confirmation_email
+    MessageMailer.confirmation(self.id).deliver_later
   end
 end

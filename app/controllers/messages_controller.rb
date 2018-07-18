@@ -11,11 +11,12 @@ class MessagesController < ApplicationController
     if @message.save
       flash[:success] = "Merci pour votre votre message nous vous répondrons rapidement! 🙌"
       redirect_to pages_contact_path
-    elsif @message.errors.any?
-      flash[:already] = @message.errors.messages[:email][0]
-      redirect_to pages_contact_path
-    else
+    elsif @message.errors.messages.first[1][0] == "is invalid"
       flash[:error] = "#{@message.email} n'est pas un email valide 😱"
+      render pages_contact_path
+    elsif @message.errors.any?
+      render pages_contact_path
+    else
       redirect_to pages_contact_path
     end
   end
