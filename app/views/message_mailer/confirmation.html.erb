@@ -1,9 +1,9 @@
 <div class="corps">
   <div class="">
-    Bonjour,<br>
+    Bonjour <%= @message.name %>,<br>
     <br>
-    Nous avons bien reçu votre message.<br>
-    Nous vous répondrons dans les plus brefs délais.
+    Nous avons bien reçu votre message. <br>
+    Nous vous répondrons dans les plus brefs délais. 🚀
     <br>
     <br>
     Je vous remercie pour votre confiance.<br>
@@ -12,7 +12,7 @@
     <br>
   </div>
   <div style="margin-left:20px; font-style: italic;" class="">
-     Message original :
+    Message original :
     <br>
     From: <%= @message.email %>
     <br>

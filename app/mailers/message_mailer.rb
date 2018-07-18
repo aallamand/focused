@@ -10,7 +10,7 @@ class MessageMailer < ApplicationMailer
 
     mail(
       to: @message.email,
-      subject: "Vous êtes abonné à Legumes.green 👍",
+      subject: "Nous avons bien reçu votre message 👍",
       track_opens: 'true')
   end
 end
