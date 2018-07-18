@@ -1,10 +1,11 @@
-<%= simple_form_for @message,  html: { class: "email-form-input"} do |f| %>
+<div class="col-xs-12 col-sm-offset-3 col-sm-6 formulaire">
+  <%= simple_form_for @message,  html: { class: "email-form-input"} do |f| %>
 
-  <%= f.input :email, placeholder: "monemail@domain.com", label: false %>
-  <%= f.input :name, placeholder: "Emile", label: false %>
-  <%= f.input :subject, placeholder: "Je veux travailler avec vous", label: false %>
-  <%= f.input :description, placeholder: "Message de ouf !", label: false %>
-  <%= f.button :submit, 'Envoyer !', class: "button-email" %>
-<% end %>
-<%= render 'shared/message' %>
-
+    <%= f.input :email, placeholder: "monemail@domain.com", label: "Email" %>
+    <%= f.input :name, placeholder: "Naruto Uzumaki", label: 'Nom & Prénom' %>
+    <%= f.input :subject, placeholder: "Mission développement site vitrine", label: "Objet"  %>
+    <%= f.input :description, placeholder: "Bla bla bla....", label: "Message"  %>
+    <%= f.button :submit, 'Envoyer !', class: "button-email" %>
+  <% end %>
+  <%= render 'shared/message' %>
+</div>

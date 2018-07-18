@@ -5,7 +5,7 @@ class MessageMailer < ApplicationMailer
   #
   #   en.subscriber_mailer.welcome.subject
   #
-  def welcome(id)
+  def confirmation(id)
     @message = Message.find(id)
 
     mail(

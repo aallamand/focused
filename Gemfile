@@ -21,6 +21,8 @@ gem 'webpacker'
 gem 'carrierwave', '~> 1.2'
 gem 'cloudinary'
 gem 'forest_liana'
+gem 'sidekiq'
+gem 'sidekiq-failures', '~> 1.0'
 
 gem "letter_opener", group: :development
 
