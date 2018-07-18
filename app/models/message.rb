@@ -3,8 +3,7 @@ class Message < ApplicationRecord
   validates :name, presence: true
   validates :subject, presence: true
   validates :description, presence: true
-  after_create :send_confirmation_email
-  after_create :send_request_email
+  after_create :send_confirmation_email, :send_request_email
 
 
   private
