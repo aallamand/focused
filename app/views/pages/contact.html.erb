@@ -20,8 +20,7 @@
     </div>
   </div>
 </div>
-<div style="background-image: url('<%= image_path 'paris-aerien.jpg' %>');" class="row form-contact">
-  <div class="overlay"></div>
+<div style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('<%= cloudinary_url("paris-aerien_gfmcfl.jpg", :quality=>45, :secure=>true) %>')" class="row form-contact">
   <%= render 'shared/contactform' %>
 </div>
 
