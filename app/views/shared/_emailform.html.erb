@@ -1,4 +1,5 @@
 <div class="col-xs-12 col-sm-offset-2 col-sm-6 formulaire">
+  <%= render 'shared/message' %>
   <%= simple_form_for @message,  html: { class: "email-form-input"} do |f| %>
 
     <%= f.input :email, placeholder: "monemail@domain.com", label: "Email" %>
@@ -7,5 +8,4 @@
     <%= f.input :description, placeholder: "Bla bla bla....", label: "Message"  %>
     <%= f.button :submit, 'Envoyer !', class: "button-email" %>
   <% end %>
-  <%= render 'shared/message' %>
 </div>
