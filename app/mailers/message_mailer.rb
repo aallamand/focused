@@ -13,4 +13,12 @@ class MessageMailer < ApplicationMailer
       subject: "Nous avons bien reçu votre message 👍",
       track_opens: 'true')
   end
+
+  def request(id)
+    @message = Message.find(id)
+    mail(
+      to: "contact@focused.fr",
+      subject: "New request #{@message.subject} | id: #{@message.id}",
+      track_opens: 'true')
+  end
 end

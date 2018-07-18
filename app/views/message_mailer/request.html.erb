@@ -1,0 +1,20 @@
+<div class="corps">
+  <div class="">
+    Bonjour,<br>
+    <br>
+    <%= @message.name %> vous a envoyé un message<br>
+    Répondez lui vite !!
+    <br>
+    <br>
+  </div>
+  <div style="margin-left:20px; font-style: italic;" class="">
+    Message original :
+    <br>
+    From: <%= @message.email %>
+    <br>
+    Subject: <%= @message.subject %>
+    <br>
+    Message: <%= @message.description %>
+  </div>
+
+</div>
