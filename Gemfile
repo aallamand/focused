@@ -9,6 +9,7 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.1.4'
 gem 'redis'
+gem 'postmark-rails'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
@@ -20,6 +21,8 @@ gem 'webpacker'
 gem 'carrierwave', '~> 1.2'
 gem 'cloudinary'
 gem 'forest_liana'
+
+gem "letter_opener", group: :development
 
 
 group :development do
