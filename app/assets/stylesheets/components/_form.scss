@@ -5,14 +5,38 @@
 .formulaire {
   margin-bottom: 35px;
   margin-top: 35px;
-
+  padding: 40px 90px;
+  background-color: rgba(255,255,255,0.75);
   label {
-    color: $white;
+    color: $gray;
     font-weight: normal;
   }
   h1 {
-    color: $white;
+    color: $gray;
+    font-weight: bolder;
     font-size: 30px;
     text-align: center;
+    margin-bottom: 30px;
   }
 }
+  .form-control {
+    color: black;
+    background-color: transparent;
+    background-image: none;
+    border: 0px solid #ccc;
+    border-bottom: 1px solid $gray;
+    box-shadow: none;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    &:focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+      border-bottom: 2px solid $gray;
+
+    }
+    &::placeholder {
+      color: $gray;
+      opacity: 0.6;
+    }
+}
+
