@@ -1,23 +1,26 @@
 <div class="container">
-  <div class="col-xs-12 col-sm-offset-2 col-sm-8">
-    <div class="contact">
-      <div class="contact-title">
-        <h1>A propos de Focused</h1>
-      </div>
-      <div class="contact-description">
-        <p>
-          Focused a été créé par Arthur Allamand.
-        <br>
-        <br>
-          Fort de plusieurs années  d’expériences en Startup à des fonctions de marketing, web-marketing et product management, il a également suivi la formation du Wagon pour se former au métier du développement informatique.
-        <br>
-        <br>
-          Aujourd’hui il met son expérience au service d'autres entreprises.
-        </p>
+  <div class="row">
+    <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+      <div class="contact">
+        <div class="contact-title">
+          <h1>A propos de Focused</h1>
+        </div>
+        <div class="contact-description">
+          <p>
+            Focused a été créé par Arthur Allamand.
+          <br>
+          <br>
+            Fort de plusieurs années  d’expériences en Startup à des fonctions de marketing, web-marketing et product management, il a également suivi la formation du Wagon pour se former au métier du développement informatique.
+          <br>
+          <br>
+            Aujourd’hui il met son expérience au service d'autres entreprises.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="form-contact">
-     <%= render 'shared/emailform' %>
-  </div>
 </div>
+<div style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('<%= cloudinary_url("paris-aerien_gfmcfl.jpg", :quality=>45, :secure=>true) %>')" class="row form-contact">
+  <%= render 'shared/contactform' %>
+</div>
+
