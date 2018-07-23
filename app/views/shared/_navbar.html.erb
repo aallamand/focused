@@ -1,8 +1,11 @@
 <div class="navbar-focused">
   <!-- Logo -->
   <%= link_to root_path, class: "" do %>
-    <div class="navbar-focused-brand">
-      <%= image_tag "logo.png", height: 45 %>
+    <div class="navbar-focused-brand hidden-xs hidden-sm">
+      <%= image_tag "Logo7.png", height: 45 %>
+    </div>
+     <div class="navbar-focused-brand hidden-md hidden-lg">
+      <%= image_tag "LogoSmall.png", height: 45 %>
     </div>
   <% end %>
 
@@ -12,8 +15,8 @@
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
-      <%= link_to "expertises", "#expertises", class: "navbar-focused-item navbar-focused-link" %>
-      <%= link_to "réalisation", "#realisations", class: "navbar-focused-item navbar-focused-link" %>
+      <%= link_to "expertises", root_url + ("#expertises"), class: "navbar-focused-item navbar-focused-link" %>
+      <%= link_to "réalisation", root_url + ("#realisations"), class: "navbar-focused-item navbar-focused-link" %>
       <%= link_to "contact", root_url + ("pages/contact"), class: "navbar-focused-item navbar-focused-link" %>
 
       <!-- Avatar with dropdown menu -->
@@ -41,8 +44,8 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to "expertises", "#expertises", class: "navbar-focused-item navbar-focused-link" %>
-      <%= link_to "réalisations", "#realisations", class: "navbar-focused-item navbar-focused-link" %>
+      <%= link_to "expertises", root_url + ("#expertises"), class: "navbar-focused-item navbar-focused-link" %>
+      <%= link_to "réalisations", root_url + ("#realisations"), class: "navbar-focused-item navbar-focused-link" %>
       <%= link_to "contact", root_url + ("pages/contact"), class: "navbar-focused-item navbar-focused-link" %>
       <%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-focused-item navbar-focused-link" %>
     <% end %>
@@ -57,8 +60,8 @@
         </span>
       </button>
       <ul class="dropdown-menu dropdown-menu-right navbar-focused-dropdown-menu">
-        <li><%= link_to "expertises", "#expertises" %></li>
-        <li><%= link_to "réalisations", "#realisations" %></li>
+        <li><%= link_to "expertises", root_url + ("#expertises") %></li>
+        <li><%= link_to "réalisations", root_url + ("#realisations") %></li>
         <li><%= link_to "contact", root_url + ("pages/contact") %></li>
       </ul>
     </div>
