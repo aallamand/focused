@@ -90,6 +90,7 @@ GEM
       useragent
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    google-analytics-rails (1.1.1)
     groupdate (4.0.1)
       activesupport (>= 4.2)
     http-cookie (1.0.3)
@@ -259,6 +260,7 @@ DEPENDENCIES
   figaro
   font-awesome-sass (~> 4.7)
   forest_liana
+  google-analytics-rails (= 1.1.1)
   jbuilder (~> 2.0)
   letter_opener
   listen (~> 3.0.5)
@@ -283,4 +285,4 @@ RUBY VERSION
    ruby 2.3.4p301
 
 BUNDLED WITH
-   1.16.2
+   1.16.3

@@ -23,6 +23,8 @@ gem 'cloudinary'
 gem 'forest_liana'
 gem 'sidekiq'
 gem 'sidekiq-failures', '~> 1.0'
+gem 'google-analytics-rails', '1.1.1'
+
 
 gem "letter_opener", group: :development
 
