@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= favicon_link_tag 'favicon.ico' %>
     <%= analytics_init if GoogleAnalytics.valid_tracker? %>
-    <%= render partial: "services/hotjar" %>
+    <%= render "services/hotjar" %>
 
 
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
