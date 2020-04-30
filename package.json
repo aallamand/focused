@@ -6,7 +6,7 @@
     "@rails/webpacker": "^3.5.5",
     "bootstrap": "3",
     "hamburgers": "^0.9.3",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "mime": "^2.3.1",
     "typed.js": "^2.0.6"
   },
